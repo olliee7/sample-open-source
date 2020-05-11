@@ -1,6 +1,12 @@
 language: java
 
-script: "mvn cobertura:cobertura"
+sudo: false # faster builds
 
+jdk:
+  - openjdk11
+  - openjdk8 
+
+script:
+  - mvn clean package
 after_success:
   - bash <(curl -s https://codecov.io/bash)
