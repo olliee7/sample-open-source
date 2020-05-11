@@ -4,7 +4,9 @@ sudo: false # faster builds
 
 jdk:
   - openjdk11
-  - openjdk8 
+  - openjdk8
+env:
+- CODECOV_TOKEN="6566dedf-da1b-4209-95d2-b9690fe25c0f"
 
 script:
   - mvn clean package
