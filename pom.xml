@@ -4,7 +4,7 @@
   <artifactId>test-open-source</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  
+  <build>
   <plugins>
     <plugin>
     <groupId>org.codehaus.mojo</groupId>
@@ -19,4 +19,5 @@
     </configuration>
 </plugin>
   </plugins>
+  </build>
 </project>
